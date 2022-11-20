@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<title>Sidebar Menu | Side Navigation Bar</title>-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CSS -->
+    <script
+      src="https://kit.fontawesome.com/80156a73ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+      </div>
+      <div class="logo2">
+        <span class="logo-name1">CodingLab</span>
+        <div
+          class="inline-flex overflow-hidden relative justify-center items-center w-10 h-10 bg-gray-100 rounded-full dark:bg-gray-600"
+        >
+          <span class="font-medium text-gray-600 dark:text-gray-300 logo-name2"
+            >JL</span
+          >
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="logo">
+          <span class="logo-name">CodingLab</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="#" class="nav-link" id="home">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="link">home</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="fa-solid fa-drumstick-bite icon"></i>
+                <span class="link">order now!</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-bell icon"></i>
+                <span class="link">Notifications</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-store-alt icon"></i>
+                <span class="link">store locator</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-message-rounded icon"></i>
+                <span class="link">FAQ's</span>
+              </a>
+            </li>
+            <hr class="my-6 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-shopping-bag icon"></i>
+                <span class="link">my orders</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-user-pin icon"></i>
+                <span class="link">my account</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-heart icon"></i>
+                <span class="link">my favorites</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="fa-solid fa-location-dot icon"></i>
+                <span class="link">order tracker</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="fa-solid fa-clock-rotate-left icon"></i>
+                <span class="link">order history</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="bottom-content">
+            <li class="list">
+              <a href="#" class="nav-link" id="log-out">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="overlay">
+      <i class="bx bx-menu menu-icon2"></i>
+    </section>
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+
+    <script>
+      const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+        overlay = document.querySelector(".overlay");
+
+      menuBtns.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navBar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+      });
+    </script>
+  </body>
+</html>
