@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <!-- Coding by CodingLab | www.codinglabweb.com-->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<title>Sidebar Menu | Side Navigation Bar</title>-->
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Boxicons CSS -->
-    <script
-      src="https://kit.fontawesome.com/80156a73ab.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--<title>Sidebar Menu | Side Navigation Bar</title>-->
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Boxicons CSS -->
+  <script src="https://kit.fontawesome.com/80156a73ab.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
     <nav>
       <div class="logo">
-        <i class="bx bx-menu menu-icon"></i>
+        <i class="bx bx-menu menu-icon" id="menu-btn"></i>
+        <div>
+          <a href="#" class="nav-link" id="home">
+            <span class="link l3">home</span>
+          </a>
+          <a href="#" class="nav-link">
+            <span class="link l3">order now!</span>
+          </a>
+          <a href="#" class="nav-link">
+            <span class="link l3">FAQ's</span>
+          </a>
+        </div>
       </div>
       <div class="logo2">
-        <span class="logo-name1">CodingLab</span>
-        <div
-          class="inline-flex overflow-hidden relative justify-center items-center w-10 h-10 bg-gray-100 rounded-full dark:bg-gray-600"
-        >
-          <span class="font-medium text-gray-600 dark:text-gray-300 logo-name2"
-            >JL</span
-          >
-        </div>
-      </div>
-      <div class="sidebar">
-        <div class="logo">
-          <span class="logo-name">CodingLab</span>
-        </div>
+        <a href="#" class="nav-link">
+          <i class="fa-solid fa-crown crown"></i>
+          <span class="logo-name1">Points</span>
 
-        <div class="sidebar-content">
-          <ul class="lists">
-            <li class="list">
-              <a href="#" class="nav-link" id="home">
-                <i class="bx bx-home-alt icon"></i>
-                <span class="link">home</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="#" class="nav-link">
-                <i class="fa-solid fa-drumstick-bite icon"></i>
-                <span class="link">order now!</span>
-              </a>
-            </li>
+        </a>
+        <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar"
+          class=" avatar flex overflow-hidden relative justify-center items-center w-12 h-12 bg-gray-100 rounded-full dark:bg-gray-600"
+          type="button">
+          <span class="font-sm text-gray-800 dark:text-gray-300 logo-name2 text-sm">CT</span>
+        </button>
+
+        <div id="dropdownAvatar"
+          class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+          <div class="py-3 px-4 text-sm text-gray-900 dark:text-white">
+            <div>Chuzu tzuyu</div>
+            <div class="font-medium truncate">+639 1234556</div>
+          </div>
+          <ul class="lists" aria-labelledby="dropdownUserAvatarButton">
             <li class="list">
               <a href="#" class="nav-link">
                 <i class="bx bx-bell icon"></i>
@@ -64,81 +59,204 @@
             </li>
             <li class="list">
               <a href="#" class="nav-link">
-                <i class="bx bx-store-alt icon"></i>
-                <span class="link">store locator</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="#" class="nav-link">
-                <i class="bx bx-message-rounded icon"></i>
-                <span class="link">FAQ's</span>
-              </a>
-            </li>
-            <hr class="my-6 h-px bg-gray-200 border-0 dark:bg-gray-700" />
-
-            <li class="list">
-              <a href="#" class="nav-link">
                 <i class="bx bx-shopping-bag icon"></i>
-                <span class="link">my orders</span>
+                <span class="link l2">my orders</span>
               </a>
             </li>
             <li class="list">
               <a href="#" class="nav-link">
                 <i class="bx bx-user-pin icon"></i>
-                <span class="link">my account</span>
+                <span class="link l2">my account</span>
               </a>
             </li>
             <li class="list">
               <a href="#" class="nav-link">
                 <i class="bx bx-heart icon"></i>
-                <span class="link">my favorites</span>
+                <span class="link l2">my favorites</span>
               </a>
             </li>
-            <li class="list">
-              <a href="#" class="nav-link">
-                <i class="fa-solid fa-location-dot icon"></i>
-                <span class="link">order tracker</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="#" class="nav-link">
-                <i class="fa-solid fa-clock-rotate-left icon"></i>
-                <span class="link">order history</span>
-              </a>
-            </li>
-          </ul>
 
-          <div class="bottom-content">
-            <li class="list">
-              <a href="#" class="nav-link" id="log-out">
-                <i class="bx bx-log-out icon"></i>
-                <span class="link">Logout</span>
-              </a>
-            </li>
+          </ul>
+          <div class="py-1">
+            <a href="#"
+              class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">log
+              out
+            </a>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="logo3">
+            <div
+              class="inline-flex overflow-hidden relative justify-center items-center w-20 h-20 bg-gray-100 rounded-full dark:bg-gray-600">
+              <span class="font-medium text-gray-600 dark:text-gray-300 logo-name2">JL</span>
+            </div>
+            <a href="#" class="nav-link" id="home">
+              <i class="fa-solid fa-crown crown"></i>
+              <span class="link l4">Points</span>
+              <i class="fa-solid fa-chevron-right arrow"></i>
+            </a>
+            <div class="side-name">
+              <h4>Chuzu tzuyu</h4>
+              <p>+639 1234556</p>
+            </div>
+          </div>
+
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="#" class="nav-link" id="home">
+                  <i class="bx bx-home-alt icon"></i>
+                  <span class="link">home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-drumstick-bite icon"></i>
+                  <span class="link">order now!</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-bell icon"></i>
+                  <span class="link">Notifications</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-store-alt icon"></i>
+                  <span class="link">store locator</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-message-rounded icon"></i>
+                  <span class="link">FAQ's</span>
+                </a>
+              </li>
+              <hr class="my-6 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-shopping-bag icon"></i>
+                  <span class="link">my orders</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-user-pin icon"></i>
+                  <span class="link">my account</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-heart icon"></i>
+                  <span class="link">my favorites</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-location-dot icon"></i>
+                  <span class="link">order tracker</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-clock-rotate-left icon"></i>
+                  <span class="link">order history</span>
+                </a>
+              </li>
+
+              <li class="list">
+                <a href="#" class="nav-link" id="log-out">
+                  <i class="bx bx-log-out icon"></i>
+                  <span class="link">Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <!-- component -->
+
+      <div class="grid gap-8 md:grid-rows-2 lg:grid-cols-3">
+        <div class="  rounded-xl sm:flex sm:space-x-8 sm:p-8">
+          <img class="w-lg h-lg"
+            src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/first_user.webp" alt="user avatar"
+            height="220" width="220" loading="lazy">
+          <div class="space-y-4 mt-4 text sm:mt-0 sm:text-left">
+            <div class="text-left sm:text-md">
+              <span class="text-xl  text-gray-500 ">Anneoyong, Chou!</span>
+              <h5 class="text-4xl font-semibold leading-none">What do you want to eat?</h5>
+            </div>
           </div>
         </div>
       </div>
-    </nav>
-
-    <section class="overlay">
-      <i class="bx bx-menu menu-icon2"></i>
+      <div class="w-96 section p-4 container-lg">
+        <div class=" rounded-lg shadow-md bg-white search">
+          <form>
+            <label for="default-search"
+              class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
+            <div class="relative">
+              <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor"
+                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </div>
+              <input type="search" id="default-search"
+                class="input block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-none focus:border-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="try our new Steak Fries Veggies">
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
-    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <section>
+      <div>
+        special offers!
+      </div>
+    </section>
+    <section>
+      <div>
+        catergory
+      </div>
+    </section>
+    <section>
+      <div>
+        what new ?
+      </div>
+    </section>
+    <section>
+      <div>
+        most popular
+      </div>
+    </section>
+  </main>
 
-    <script>
-      const navBar = document.querySelector("nav"),
-        menuBtns = document.querySelectorAll(".menu-icon"),
-        overlay = document.querySelector(".overlay");
+  <section class="overlay"></section>
+  <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-      menuBtns.forEach((menuBtn) => {
-        menuBtn.addEventListener("click", () => {
-          navBar.classList.toggle("open");
-        });
+  <script>
+    const navBar = document.querySelector("nav"),
+      menuBtns = document.querySelectorAll(".menu-icon"),
+      overlay = document.querySelector(".overlay");
+
+    menuBtns.forEach((menuBtn) => {
+      menuBtn.addEventListener("click", () => {
+        navBar.classList.toggle("open");
       });
+    });
 
-      overlay.addEventListener("click", () => {
-        navBar.classList.remove("open");
-      });
-    </script>
-  </body>
+    overlay.addEventListener("click", () => {
+      navBar.classList.remove("open");
+    });
+  </script>
+</body>
+
 </html>
